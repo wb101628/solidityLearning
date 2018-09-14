@@ -18,8 +18,13 @@ public class IndexController {
 
 	@Autowired
 	private BatchService batchService;
-
-
+	
+	@RequestMapping("/index")
+	public String index () {
+		return "index";
+		
+	}
+	
 	@RequestMapping(value = "/import", method = RequestMethod.POST)
 	@ResponseBody
 	public Object exImport( @RequestParam("file")MultipartFile uploadfile) {
