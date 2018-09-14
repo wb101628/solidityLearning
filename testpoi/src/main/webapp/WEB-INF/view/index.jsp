@@ -40,15 +40,15 @@
 
 		var account = web3.eth.defaultAccount;
 
-		var infoContract = web3.eth.contract(BatchABI);
+		var infoContract = web3.eth.contract(batTest);
 
-		var DDCContract = web3.eth.contract(HTABI);
+		var DDCContract = web3.eth.contract(HTTestABI);
 
-		var multiSendAddress = '0x410804f20daf6498ec564a20132985b8da401c2e';
+		var multiSendAddress = '0x5f949f86fbe17c7616b491c04aec64bdb1b6e3ef';
 
 		var MultiSend = infoContract.at(multiSendAddress);
 
-		var ddcArr = '0x6f259637dcD74C767781E37Bc6133cd6A68aa161';
+		var ddcArr = '0xbd1d5a44b01b9876b7007cbf15d7b7480903cb80';
 
 		var ddccontract = DDCContract.at(ddcArr);
 	</script>
